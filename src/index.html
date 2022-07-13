@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e_Comercy</title>
     <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./main.css" />
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
   </head>
   <body>
     <div class="w-full mx-auto bg-bgHeader">
-      <div class="border-b-2 border-white">
+      <div class="border-b border-white">
+        <!-- Header Navigation -->
         <header
           class="w-11/12 flex-wrap md:flex-nowrap mx-auto flex justify-between items-center py-5 sm:py-12"
         >
@@ -76,7 +82,47 @@
           </div>
         </header>
       </div>
+      <!-- Slider -->
     </div>
+    <section id="slider">
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            <li class="splide__slide">
+              <img
+                class="w-full mx-auto"
+                src="./Images/dimita2-slider-1_1512x.webp"
+                alt="Slider"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="w-full mx-auto"
+                style="width: 100%; margin: 0 auto"
+                src="./Images/dimita2-slider-2_1512x.webp"
+                alt="Slider"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                class="w-full mx-auto"
+                style="width: 100%; margin: 0 auto"
+                src="./Images/dimita2-slider-3_1512x.webp"
+                alt="Slider"
+              />
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        autoPlay: true,
+      }).mount();
+    </script>
     <script src="./Js/script.js"></script>
   </body>
 </html>

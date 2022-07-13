@@ -5,3 +5,6 @@
 .activeMenu {
   display: block;
 }
+ #slider button{
+  background-color: #fff;
+ }

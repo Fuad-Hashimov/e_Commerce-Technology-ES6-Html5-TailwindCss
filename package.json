@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.7"
   }
 }
